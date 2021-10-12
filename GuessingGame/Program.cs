@@ -39,12 +39,17 @@ namespace GuessingGame // A gauessing game where the user can guess a number bet
                     Console.WriteLine($"Your chosen number is the same as the secret number, which is {random_number}! You made it  {counter} tries!");
                     Console.WriteLine("Would you like to play again?");
                     Console.WriteLine("Press Y or y to continue");
-                    continueGame = Console.ReadLine();
+                   string continueGame = Console.ReadLine();
                     if (continueGame != "Y" || continueGame !="y")
                     
 
+                        stopthegame = false;
+                    else {
                         stopthegame = true;
+                            }
                     }
+
+                
                    
                     
                 }
@@ -58,4 +63,4 @@ namespace GuessingGame // A gauessing game where the user can guess a number bet
         }
     }
 
-}
+
